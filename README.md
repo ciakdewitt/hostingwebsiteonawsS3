@@ -7,7 +7,7 @@ Why using CloudFront?
 </p>
 
 <h1>1. Create a S3 Bucket </h1>
-<p padding=20px>In the S3 console we will create two different buckets: first will be with the 'www'. the second will be without the 'www'; the reason is because. <br>
+<p style="padding: 20px;">In the S3 console we will create two different buckets: first will be with the 'www'. the second will be without the 'www'; the reason is because. <br>
 In the bucket name we insert the actual name of the website with the 'www' followed by the '.cloud' (example). <br>
 We wont disable the 'Block all public access' for now and we leave the 'default encryption' as it is.<br>
 We hit the 'Create Bucket' button at the end of the page.<br>
