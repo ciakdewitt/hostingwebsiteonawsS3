@@ -23,9 +23,26 @@ Once the upload is complete we need to enable the public settings for our bucket
 <br> Then we need to set up a policy bucket in the policy tab.<br>
 The added policy is an AWS S3 bucket policy. It allows public read access to objects in the specified bucket.<br> 
 The policy grants the s3:GetObject permission to all AWS accounts and requires that any requests for these objects must be authenticated. The policy uses the wildcard character (*) to allow access to all objects in the bucket.
+<br>
+  {
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "PublicReadGetObject",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": [
+                "s3:GetObject"
+            ],
+            "Resource": [
+                "arn:aws:s3:::Bucket-Name/*"
+            ]
+        }
+    ]
+}
 <br><img src="pictures/4.S3 bucket.png" alt="4.S3Bucket">
 <br>
-The last modification we want to do is to enable 'Static Website Hosting' on the 'Permission' panel; for the 'Hosting Type' we set 'Host a static website' and last but not least we set as default page our index.html file. <br>
+The last modification we want to do on this S3 bucket is to enable 'Static Website Hosting' on the 'Permission' panel; for the 'Hosting Type' we set 'Host a static website' and last but not least we set as default page our index.html file. <br>
 Once we completed all these steps our website is about ready to be public, but if we search on the browser our domain we can't still see a thing.
 That's why now we need to do the redirect on the other S3 bucket
 </p>
