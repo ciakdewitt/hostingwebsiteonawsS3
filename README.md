@@ -18,6 +18,10 @@ The following pictures follow the description. <br>
 Create another S3 bucket without add the 'www' before your website domain name.
 After created these two buckets, we upload our website file in the www.mental-image.cloud
 Once the upload is complete we need to enable the public settings for our bucket.
-We can to these changes in the 'Permission': we scroll to the 'Block public access' and we want to disable this setting that is on by default.<br>
+<br>We can do these changes in the 'Permission' tab: we scroll to the 'Block public access' and we want to disable this setting that is on by default.<br>
 <br><img src="pictures/3.S3 bucket.png" alt="3.S3Bucket">
+<br> Then we need to set up a policy bucket in the policy tab.<br>
+The added policy is an AWS S3 bucket policy. It allows public read access to objects in the specified bucket.<br> 
+The policy grants the s3:GetObject permission to all AWS accounts and requires that any requests for these objects must be authenticated. The policy uses the wildcard character (*) to allow access to all objects in the bucket.
+<br><img src="pictures/4.S3 bucket.png" alt="4.S3Bucket">
 </p>
