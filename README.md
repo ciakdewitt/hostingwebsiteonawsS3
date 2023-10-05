@@ -6,7 +6,7 @@ The last part of the project will be dedicated to the setup of a CI/CD pipeline.
 Why using CloudFront?
 </p>
 
-<h1>1. Create a S3 Bucket </h1>
+<h1>1. Create S3 Buckets </h1>
 <p>In the S3 console we will create two different buckets: first will be with the 'www'. the second will be without the 'www'; the reason is because. <br>
 In the bucket name we insert the actual name of the website with the 'www' followed by the '.cloud' (example). <br>
 We wont disable the 'Block all public access' for now and we leave the 'default encryption' as it is.<br>
@@ -32,3 +32,5 @@ The last modification we want to do on this S3 bucket is to enable 'Static Websi
 <br>So on the other S3 bucket we created we go to the 'Properties' tab and scroll to the bottom until we find once again the 'Static website hosting' to edit. Instead of choosing 'Hosting a static website' we want to choose 'Redirect request for an object' and the 'Host name' field we want to add the name of our other bucket 'www.mental-image.cloud' and for now we set the protocol as 'Http' and we hit 'save changes'.
 <br><img src="pictures/5.S3 bucket.png" alt="5.S3Bucket">
 </p>
+
+<h1>2. Set Route 53</h1>
