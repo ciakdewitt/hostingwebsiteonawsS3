@@ -28,5 +28,7 @@ The policy grants the s3:GetObject permission to all AWS accounts and requires t
 <br>
 The last modification we want to do on this S3 bucket is to enable 'Static Website Hosting' on the 'Permission' panel; for the 'Hosting Type' we set 'Host a static website' and last but not least we set as default page our index.html file.
 <br>Once we completed all these steps our website is about ready to be public, but if we search on the browser our domain we can't still see a thing.
-<b3>That's why we now need to redirect on the other S3 bucket.
+<br>That's why we now need to redirect on the other S3 bucket.
+<br>So on the other S3 bucket we created we go to the 'Properties' tab and scroll to the bottom until we find once again the 'Static website hosting' to edit. Instead of choosing 'Hosting a static website' we want to choose 'Redirect request for an object' and the 'Host name' field we want to add the name of our other bucket 'www.mental-image.cloud' and for now we set the protocol as 'Http' and we hit 'save changes'.
+<br><img src="pictures/5.S3 bucket.png" alt="5.S3Bucket">
 </p>
