@@ -12,5 +12,5 @@ In the bucket name we insert the actual name of the website with the 'www' follo
 We wont disable the 'Block all public access' for now and we leave the 'default encryption' as it is.<br>
 We hit the 'Create Bucket' button at the end of the page.<br>
 The following pictures follow the description.
-'![](https://github.com/ciakdewitt/hostingwebsiteonawsS3/blob/9fd74486a207d83d048650fefd025ee2d67b4dc3/pictures/1.S3%20bucket.png)'
+![1.S3 bucket](pictures/1.S3 bucket.png)
 </p>
