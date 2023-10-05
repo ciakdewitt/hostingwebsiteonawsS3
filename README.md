@@ -11,6 +11,6 @@ Why using CloudFront?
 In the bucket name we insert the actual name of the website with the 'www' followed by the '.cloud' (example). <br>
 We wont disable the 'Block all public access' for now and we leave the 'default encryption' as it is.<br>
 We hit the 'Create Bucket' button at the end of the page.<br>
-The following pictures follow the description.
+The following pictures follow the description. <br>
 <img src="pictures/1.S3 bucket.png" alt="1.S3Bucket">
 </p>
