@@ -19,5 +19,6 @@ Create another S3 bucket without add the 'www' before your website domain name.
 After created these two buckets, we upload our website file in the www.mental-image.cloud
 Once the upload is complete we need to enable the public settings for our bucket.
 We can to these changes in the 'Permission': we scroll to the 'Block public access' and we want to disable this setting that is on by default.
+<br>
 <img src="pictures/3.S3 bucket.png" alt="3.S3Bucket">
 </p>
