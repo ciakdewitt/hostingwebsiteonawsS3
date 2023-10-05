@@ -24,7 +24,7 @@ Once the upload is complete we need to enable the public settings for our bucket
 The added policy is an AWS S3 bucket policy. It allows public read access to objects in the specified bucket.<br> 
 The policy grants the s3:GetObject permission to all AWS accounts and requires that any requests for these objects must be authenticated. The policy uses the wildcard character (*) to allow access to all objects in the bucket.
 <br>
-<br><img src="pictures/4.S3 bucket.png" alt="4.S3Bucket">
+<br>
 <br>
 The last modification we want to do on this S3 bucket is to enable 'Static Website Hosting' on the 'Permission' panel; for the 'Hosting Type' we set 'Host a static website' and last but not least we set as default page our index.html file.
 <br>Once we completed all these steps our website is about ready to be public, but if we search on the browser our domain we can't still see a thing.
