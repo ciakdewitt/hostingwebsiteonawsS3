@@ -1,4 +1,4 @@
-# Hosting a static website on AWS S3 and CI/CD pipeline with AWS
+# Hosting a static website on AWS S3 and CI/CD pipeline 
 
 <p>In this project I would like to walk through the complete pipeline to deploy a static website on AWS using on AWS S3, CloudFront, ACM, Route53.<br>
 The last part of the project will be dedicated to the setup of a CI/CD pipeline. <br>
