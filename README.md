@@ -33,13 +33,13 @@ The last modification we want to do on this S3 bucket is to enable 'Static Websi
 <br><img src="pictures/5.S3 bucket.png" alt="5.S3Bucket">
 </p>
 
-<h1>3. CI/CD</h1>
+<h1>2. CI/CD</h1>
 <p>We didnt create a route53 or cloudfront couse the website is using another hosting (Aruba) but we can set a CI/CD pipeline using AWS CodePipeline and GitHub as Repo.
-<br>The following images trace the CI/CD pipeline.
+<br>The following images trace the CI/CD pipeline.<br>
 <br>First we need to create a new Pipeline and settings
 <img src="pictures/1.CodePipeline.png" alt="1.CodePipeline">
 <br>Then we proceed to choose the 'Source' basically where we're storing our code - GitHub in our example - and what is our repository name.
-<img src="pictures/3.CodePipeline.png" alt="3.CodePipeline">
+<img src="pictures/3.CodePipeline.png" alt="3.CodePipeline"><br>
 <br>After this we choose our DeployProvider - AWS S3 for our example - we choose the bucket where our website is hosted.
 <img src="pictures/4.CodePipeline.png" alt="4.CodePipeline">
 <br>We now can that the pipeline is being created and the source is in progress.
