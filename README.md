@@ -33,4 +33,25 @@ The last modification we want to do on this S3 bucket is to enable 'Static Websi
 <br><img src="pictures/5.S3 bucket.png" alt="5.S3Bucket">
 </p>
 
-<h1>2. Set Route 53</h1>
+<h1>3. CI/CD</h1>
+<p>We didnt create a route53 or cloudfront couse the website is using another hosting (Aruba) but we can set a CI/CD pipeline using AWS CodePipeline and GitHub as Repo.
+<br>The following images trace the CI/CD pipeline.
+<br>First we need to create a new Pipeline and settings
+<img src="pictures/1.CodePipeline.png" alt="1.CodePipeline">
+<br>Then we proceed to choose the 'Source' basically where we're storing our code - GitHub in our example - and what is our repository name.
+<img src="pictures/3.CodePipeline.png" alt="3.CodePipeline">
+<br>After this we choose our DeployProvider - AWS S3 for our example - we choose the bucket where our website is hosted.
+<img src="pictures/4.CodePipeline.png" alt="4.CodePipeline">
+<br>We now can that the pipeline is being created and the source is in progress.
+<img src="pictures/6.CodePipeline.png" alt="6.CodePipeline">
+<br>After that we can see that the deploying is succeeded.
+<img src="pictures/7.CodePipeline.png" alt="7.CodePipeline">
+<br>Now if we make a small change of the github index.html file - like change the 'h1' header file adding '2023', we can commit the change and we can clearly see that the pipeline quickly update the pipeline.
+<img src="pictures/6.CodePipeline.png" alt="6.CodePipeline">
+<br>If we check the code commit we can see the changes done
+<img src="pictures/8.CodePipeline.png" alt="8.CodePipeline">
+<br>When we head to the s3 hosted website we can see the change.
+<img src="pictures/9.CodePipeline.png" alt="9.CodePipeline">
+
+
+</p>
